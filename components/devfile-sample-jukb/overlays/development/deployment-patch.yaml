@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jukb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0024-tenant/tkrw-pr712-0075-0024-app/devfile-sample-jukb@sha256:fd4e5223df91e973040f69209015115f360ec112368234a1bf54d792637f4f06
+        name: my-nodejs
+        resources: {}
+status: {}
